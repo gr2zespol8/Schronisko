@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import DbOperations from './db-operations';
 import reportWebVitals from './reportWebVitals';
 import Authentication from './Authentication';
+import Home from './pages/Home';
+import './App.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DbOperations />
-    <Authentication />
+    <Home />
   </React.StrictMode>
 );
 

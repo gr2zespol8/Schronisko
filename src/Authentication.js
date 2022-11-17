@@ -53,7 +53,7 @@ function Authentication() {
   };
 
   return (
-    <div className="App">
+    <div className="auth">
       <div>
         <h3> Register User </h3>
         <input
