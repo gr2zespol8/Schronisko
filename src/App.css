@@ -4,7 +4,7 @@
 }
 
 
-.navbar {
+header {
   background-color: #b14a75; 
   min-height: 110px;
   display: flex;
@@ -13,4 +13,13 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }

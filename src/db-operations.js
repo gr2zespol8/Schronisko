@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import {db} from './firebase-config'
 import {collection, getDocs, addDoc, deleteDoc,doc} from 'firebase/firestore';
+import {Row, Col, Container} from 'react-bootstrap'
 
 function DbOperations() {
     const [newName, setNewName] = useState(''),
@@ -51,21 +52,24 @@ function DbOperations() {
       }}></input>
 
       <button onClick={createAnimal}> Add an animal</button>
-
+      
       {animals.map((animals) => {
         return (
-          <div>
-            {""}
-            <h3>Name: {animals.name}</h3>
-            <h3>Species: {animals.species}</h3>
-            <h3>Age: {animals.age}</h3>
-            <h3>Character: {animals.character}</h3>
-            <button onClick={() => {deleteAnimal(animals.id)}}>Delete animal</button>
-          </div>
+          <Container>
+            <Row md={6}>
+              <Col>
+              Name: {animals.name} <br/>
+              Species: {animals.species}<br/>
+              Age: {animals.age}<br/>
+              Character: {animals.character}<br/>
+              <button onClick={() => {deleteAnimal(animals.id)}}>Delete animal</button>
+              </Col>
+            </Row>
+          </Container>
         );
       })}
       </div>;
   
 }
 
-export default DbOperations;
+export default DbOperations
