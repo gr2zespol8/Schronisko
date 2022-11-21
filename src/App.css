@@ -10,16 +10,19 @@ header {
   display: flex;
   justify-content: left;
   font-size: calc(10px + 2vmin);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 footer {
   position: relative;
-  left: 0;
-  bottom: 0;
   width: 100%;
   color: white;
   text-align: center;
+}
+
+.auth { 
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
