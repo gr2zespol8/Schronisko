@@ -6,7 +6,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "./firebase-config";
-import Form from 'react-bootstrap/Form';
+import {Form, Button} from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -58,37 +58,49 @@ function Authentication() {
 
   return (
     <div className="auth">
-      <div className="login">
-        <h1 class="text-center ">Log In</h1>
-        <h4 class="text-center ">It will allow you to send documents and receive feedback</h4>
-      <InputGroup  className="mb-5">
+      <div className="py-5 text-center">
+        <h1>Log In</h1>
+        <h4>It will allow you to send documents and receive feedback</h4>
+          <div class="user-info">
+          <h4> User Logged In: </h4>
+            {user?.email} <br/>
+            <button 
+              class="myButton"
+              onClick={logout}> SIGN OUT </button>
+          </div>
+      </div>
+      <InputGroup>
         <Form.Control
+          className="mx-5"
           placeholder="Email..."
           onChange={(event) => {
             setLoginEmail(event.target.value);
           }}
         />
         <Form.Control
+          className= "mx-5"
           placeholder="Password..."
           onChange={(event) => {
             setLoginPassword(event.target.value);
           }}
         />
       </InputGroup>
-      </div>
       
 
+      <button 
+      class="myButton"
+      onClick={login}>LOG IN</button>
 
-      <button onClick={login}> Login</button>
-
-      <InputGroup className="mb-4">
+      <InputGroup className="my-4">
         <Form.Control
+        className= "mx-5"
           placeholder="Email..."
           onChange={(event) => {
             setRegisterEmail(event.target.value);
           }}
         />
         <Form.Control
+        className= "mx-5"
           placeholder="Password..."
           onChange={(event) => {
             setRegisterPassword(event.target.value);
@@ -97,12 +109,9 @@ function Authentication() {
         />
       </InputGroup>
 
-      <button onClick={register}> Create User</button>
-
-      <h4> User Logged In: </h4>
-      {user?.email}
-
-      <button onClick={logout}> Sign Out </button>
+      <button 
+      class="myButton"
+      onClick={register}> CREATE USER</button>
     </div>
   );
 }

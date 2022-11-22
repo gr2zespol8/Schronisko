@@ -1,8 +1,11 @@
-:root {
-  background: linear-gradient(to right, #ffefba, #ffffff);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
+body{
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100%;
+    margin: auto;
+
+}
 
 header {
   background-color: #b14a75; 
@@ -11,18 +14,47 @@ header {
   justify-content: left;
   font-size: calc(10px + 2vmin);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 footer {
-  position: relative;
   width: 100%;
   color: white;
   text-align: center;
+  bottom:0;
 }
 
-.auth { 
-  background: linear-gradient(to right, #ffefba, #ffffff);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.user-info{
+  margin-top: 2rem;
+  margin-right: 2rem;
+  position:absolute;
+  right: 0;
+  top: 0;
 }
+
+.myButton{ 
+  left: 33%;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: Teko;
+  font-weight: 0; 
+  font-size: 16px; 
+  color: #ffffff; 
+  background: #77aad9;
+  padding: 10px 47px; 
+  border: none; 
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 22px 50px;
+  transition : 200ms;
+  width: 33%;
+  }
+  
+  .myButton:hover{ 
+  padding: 10px 50px;
+  color: #ffffff;
+  border: none;
+  }
+
+  .myButton:active{
+    background-color: #b14a75;
+  }
