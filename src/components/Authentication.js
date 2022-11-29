@@ -6,7 +6,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "./firebase-config";
-import {Form, Button} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
