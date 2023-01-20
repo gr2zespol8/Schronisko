@@ -21,32 +21,35 @@ function AnimalsDisplay() {
       });
     });
   }, []);
-
+  
 
 
   return (
-    <div class="container pt-5 pb-3 px-lg-5 mb-5">
-      <h1 class="mb-5">Te zwierzaki czekają na adopcję</h1>
-      <Row>
-      {imageUrls.map((url) => {
-        return (
+    
+      
+      <div class="container pt-5 pb-3 px-lg-5 mb-5">
+        <h1 class="mb-5">Te zwierzaki czekają na adopcję</h1>
+        <Row>
+        {imageUrls.map((url) => {
+          return (
 
-          <Col className="col-4 mb-5">
-            <Card className="flex-fill">
-            <Card.Img variant="top" src={url}/>
-            <Card.Body>
-              <Card.Title></Card.Title>
-              <Card.Text>
+            <Col className="col-3 mb-5">
+              <Card className="flex-fill">
+              <Card.Img variant="top" src={url}/>
+              <Card.Body>
+                <Card.Title></Card.Title>
+                <Card.Text>
+                  
+                {url.substr(86,(url.indexOf('.jpeg')-86))}
+                </Card.Text>
                 
-              </Card.Text>
-              <Button variant="primary">Poznaj</Button>
-            </Card.Body>
-            </Card>
-          </Col>
-      );
-      })}
-      </Row>
-    </div>
+              </Card.Body>
+              </Card>
+            </Col>
+        );
+        })}
+        </Row>
+        </div>
   )
 }
 

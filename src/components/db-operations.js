@@ -32,6 +32,11 @@ function DbOperations() {
       getAnimals();
     }, [])
 
+
+     
+
+
+
     return <div className="DbOperations">
       <h3>Add an animal</h3>
       <input placeholder='Name...'

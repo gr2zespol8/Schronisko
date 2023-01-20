@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import {db} from './firebase-config'
 import {collection, getDocs, addDoc, deleteDoc,doc} from 'firebase/firestore';
 import {Row, Col, Button, Card, InputGroup,Form} from 'react-bootstrap'
-import { v4 } from "uuid";
+
 import {storage} from './firebase-config'
 import {
   ref,
@@ -49,7 +49,7 @@ function AdminTest() {
   const imagesListRef = ref(storage, "animal_pics/");
   const uploadFile = () => {
     if (imageUpload == null) return;
-    const imageRef = ref(storage, `animal_pics/${animals.id}`);
+    const imageRef = ref(storage, `animal_pics/${imageUpload.name}`);
     uploadBytes(imageRef, imageUpload).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
         setImageUrls((prev) => [...prev, url]);
@@ -66,8 +66,6 @@ function AdminTest() {
       });
     });
   }, []);
-
-
 
     return <div className="DbOperations">
       <h3>Add an animal</h3>
@@ -102,26 +100,27 @@ function AdminTest() {
         createAnimal();
         uploadFile();
       }}> Add an animal</Button><br/>
-
+<div class="container pt-5 pb-3 px-lg-5 mb-5">
         <Row>
         {imageUrls.map((url) => {
           return (
 
-            <Col className="col-4 mb-5">
+            <Col className="col-3 mb-5">
               <Card className="flex-fill">
               <Card.Img variant="top" src={url}/>
               <Card.Body>
                 <Card.Title></Card.Title>
                 <Card.Text>
-                  {animals.name}dsadasda
+                {url.substr(86,(url.indexOf('.jpeg')-86))}
                 </Card.Text>
-                <Button variant="primary">Poznaj</Button>
+                
               </Card.Body>
               </Card>
             </Col>
         );
         })}
         </Row>
+        </div>
       </div>
   
 }

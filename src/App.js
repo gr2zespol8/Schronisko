@@ -8,6 +8,7 @@ import './App.css'
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import DbOperations from './components/db-operations'
 import Admin from './pages/Admin'
+import Forms from './pages/Forms'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />}/>
         <Route path="/animals" element={<Animals />}/>
         <Route path="/Admin" element={<Admin />}/>
+        <Route path="/Forms" element={<Forms />}/>
       </Routes>
     <Footer />
     </BrowserRouter>

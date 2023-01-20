@@ -1,10 +1,11 @@
-import React from 'react'
 
+import React from 'react'
+import AnimalsDisplay from '../components/animals-display';
 
 function Home() {
   return (
     <div>
-      fafasfsfs
+      <AnimalsDisplay />
   </div>
   )
 }
@@ -12,4 +13,3 @@ function Home() {
 
 
 export default Home
-

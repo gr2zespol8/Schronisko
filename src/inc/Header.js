@@ -24,6 +24,7 @@ function Header() {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/Animals">Animals</Nav.Link>
                   <Nav.Link href="/Admin">Admin</Nav.Link>
+                  <Nav.Link href="/Forms">Forms</Nav.Link>
                   <Nav.Link href="/Signup">Login or Sign up</Nav.Link>
               </Nav>
             </Navbar.Collapse> 
