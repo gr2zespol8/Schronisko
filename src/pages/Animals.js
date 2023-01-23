@@ -1,10 +1,10 @@
 import React from 'react'
-import AnimalsDisplay from '../components/animals-display';
+import ShowAnimals from '../components/ShowAnimals';
 
 function Animals() {
   return (
     <div>
-      <AnimalsDisplay />
+      <ShowAnimals />
   </div>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import form from '../components/form';
+import Ankieta from '../components/Ankieta';
 
 function Forms() {
   return (
     <div>
-      <Form />
+      <Ankieta />
   </div>
   )
 }

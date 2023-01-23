@@ -3,12 +3,12 @@ import {Card, Stack} from 'react-bootstrap'
   import React from 'react'
 import { margin } from '@mui/system';
 import { ForkLeft } from '@mui/icons-material';
-import pies2 from './animal_images/pies2.jpeg';
-import cat5 from './animal_images/cat5.jpeg';
-import cat4 from './animal_images/cat4.jpeg';
-import cat3 from './animal_images/cat3.jpeg';
-import cat2 from './animal_images/cat2.jpeg';
-import cat1 from './animal_images/cat1.jpeg';
+import pies2 from './animal_images/Sofi.jpeg';
+import cat5 from './animal_images/Mruczek.jpeg';
+import cat4 from './animal_images/Misiek.jpeg';
+import cat3 from './animal_images/Lucy.jpeg';
+import cat2 from './animal_images/Tiger.jpeg';
+import cat1 from './animal_images/Leo.jpeg';
   function Karuzela() {
  
     return (
@@ -34,7 +34,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>kot4</h3>
+            <h3>Zenek</h3>
             
             </Carousel.Caption>  
             </Card>
@@ -47,7 +47,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>kot2</h3>
+            <h3>Leo</h3>
             
             </Carousel.Caption>  
             </Card>
@@ -60,7 +60,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>kot3</h3>
+            <h3>Tiger</h3>
             
             </Carousel.Caption>  
             </Card>
@@ -81,7 +81,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>kot4</h3>
+            <h3>Misiek</h3>
             
             </Carousel.Caption>  
             </Card>
@@ -94,7 +94,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>pies1</h3>
+            <h3>Mruczek</h3>
             
             </Carousel.Caption>  
             </Card>
@@ -107,7 +107,7 @@ import cat1 from './animal_images/cat1.jpeg';
             height={500} 
             />
             <Carousel.Caption>
-            <h3>pies2</h3>
+            <h3>Lucy</h3>
             
             </Carousel.Caption>  
             </Card>
