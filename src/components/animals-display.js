@@ -6,6 +6,7 @@ import {
   getDownloadURL,
   listAll
 } from "firebase/storage";
+import MainFeaturedPost from './MainFeaturedPost';
 
 function AnimalsDisplay() {
 
@@ -49,6 +50,10 @@ function AnimalsDisplay() {
         );
         })}
         </Row>
+        <div class="container pt-5 pb-3 px-lg-5 mb-5">
+        <h1 class="mb-5">Current Affairs</h1>
+        
+        </div>
         </div>
   )
 }
